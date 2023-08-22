@@ -12,21 +12,13 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Footer from '@/components/footer';
+
 
 function Copyright(props: any) {
   return (
     <>
-    
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://princessobomefoundation.org/">
-        Princess Obome Foundation
-      </Link>
-      {' '}{new Date().getFullYear()}{'.'}
-    </Typography>
-    <Typography variant="body2" color="text.secondary" align="center">
-        5161 Lankershim Blvd, Suite 250, North Hollywood, CA 91601
-    </Typography>
+    <Footer></Footer>
     </>
   );
 }
